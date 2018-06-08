@@ -1,3 +1,15 @@
-<p>
-  ruta-inicio works!
-</p>
+<div class="row">
+  <div class="col-sm-6" style="background-color: crimson">
+    <ul>
+      <li>
+        <a [routerLink]="['usuario']">Usuario</a>
+      </li>
+      <li>
+        <a [routerLink]="['permisos']">Permisos</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-sm-6" style="background-color: blueviolet">
+    <router-outlet></router-outlet>
+  </div>
+</div>

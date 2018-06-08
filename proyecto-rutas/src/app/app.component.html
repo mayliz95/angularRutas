@@ -3,10 +3,10 @@
 <div class="container">
   <h1>Contenido</h1>
   <div class="row">
-    <div class="col-sm-6" style="background-color: aqua">
+    <div class="col-sm-4" style="background-color: aqua">
       <ul>
         <li>
-          <a routerLink="/inicio">
+          <a [routerLink]="['/inicio', 'hola', 'como', variableEstas]">
             <h3>Inicio</h3>
           </a>
         </li>
@@ -16,9 +16,15 @@
           </a>
         </li>
       </ul>
-
+      <button class="btn btn-info" (click)="irAInfo()">
+        Info
+      </button>
+      <button class="btn btn-succes" (click)="irAFAQ()">
+        FAQ
+      </button>
     </div>
-    <div class="col-sm-6" style="background-color: coral">
+    <div class="col-sm-8" style="background-color: coral">
+      Hijo
       <router-outlet></router-outlet>
     </div>
   </div>
